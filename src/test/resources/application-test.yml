@@ -1,0 +1,27 @@
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:h2:mem:gamedb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show: true
+  messages:
+    basename: i18n/message
+    encoding: UTF-8
+    fallback-to-system-locale: true
+
+game:
+  player:
+    max:
+      moves: 5000
+
+ogging:
+  level:
+    org:
+      liferando: DEBUG
+      hibernate:
+        SQL: INFO

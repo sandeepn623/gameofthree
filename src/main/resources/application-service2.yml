@@ -1,0 +1,35 @@
+server:
+  port: ${PORT:8062}
+
+spring:
+  profiles:
+    active: player2
+  datasource:
+    url: jdbc:h2:tcp://localhost:9091/mem:gamedb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: create
+  show: true
+  h2:
+    console:
+      enabled: trueFR
+  messages:
+    basename: i18n/message
+    encoding: UTF-8
+    fallback-to-system-locale: true
+
+game:
+  url: http://localhost:8061/api/game/play
+  player:
+    max:
+      moves: 5000
+
+logging:
+  level:
+    org:
+      liferando: DEBUG
+      hibernate:
+        SQL: INFO
