@@ -54,7 +54,6 @@
 3. for automatic selection of value and start the game automatically use the below urls
 <br/>http://localhost:8061/api/game/start?auto=true 
 <br/>http://localhost:8061/api/game/start?auto=true
-<br/>
 4. The API documentation is based on Swagger2. It can be accessed from the below url:
 <br/>http://localhost:8061/swagger-ui.html
 
